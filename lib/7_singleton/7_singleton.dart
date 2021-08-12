@@ -17,6 +17,7 @@ void main(){
 
 
   //*modelo factory -Menos usado
+  //*Repare que o 'factory' nao podemos instanciar como o 'static'
   print(ConnectionFactory().hashCode);
   print(ConnectionFactory().hashCode);
   print(ConnectionFactory().hashCode);
