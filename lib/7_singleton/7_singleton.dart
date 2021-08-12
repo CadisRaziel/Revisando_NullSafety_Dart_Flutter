@@ -5,7 +5,7 @@ import 'package:dart_nome_projeto/7_singleton/connection.dart';
 
 void main(){
   //?Repare que quando chamamos a classe Connection mesmo atribuindo variavies diferentes, ela retorna o mesmo hashCode
-  //*modelo static -Mais usado
+  //*modelo static -Mais usado (Pattern)
   var con1 = Connection.instance;
   print(con1.hashCode);
   var con2 = Connection.instance;
@@ -16,8 +16,9 @@ void main(){
   print(con4.hashCode);
 
 
-  //*modelo factory -Menos usado
+  //*modelo factory -Menos usado (factory -> fabrica de instancias)
   //*Repare que o 'factory' nao podemos instanciar como o 'static'
+  //*Porém podemos chamar direto 'ConnectionFactory().hashCode'
   print(ConnectionFactory().hashCode);
   print(ConnectionFactory().hashCode);
   print(ConnectionFactory().hashCode);
