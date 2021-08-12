@@ -12,9 +12,12 @@ void main(){
   Carro golCarro = Gol();
 
   //*repare como a 'golCarro' nao consegue acessar o 'tipoDeRodas'
-  //*Porém podemos usar da arte manha do dart e fazer o seguinte para o 'golCarro' acessar o metodo da classe 'Gol'
   print(gol.tipoDeRodas());
-  print(golCarro);
+  print(golCarro); // <- se eu tentar colocar o '.tipoDeRodas() ele não aceita !!
+
+
+  //*Porém podemos usar da arte manha do dart e fazer o seguinte para o 'golCarro' acessar o metodo da classe 'Gol'
+  //*Veja abaixo
 
   //*o Dart nos possibilita que a interface consiga acessar o metodo de uma classe comun dessa forma
   //*Isso se chama 'Cast'
